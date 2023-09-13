@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+$theme: "style" !default;
+
+// color-scheme: ;
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+$red: #ff0000;
+$crimson: #dc143c;
+
+$primary: $red !default;
+$secondary: $crimson !default;
+
+$body-bg: $gray-100;
+$body-color: $gray-800 !default;
+
+// Typography
+$font-family-sans-serif: "Libre Baskerville";
+$font-family-monospace: "Fira Code";
+
+$font-size-base: 0.875rem;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4_font-size: $font-size-base * 1.10;
+$h5-font-size: $font-size-base * 1.05;
+$h6-font-size: $font-size-base * 1.05;
+
+
+// Code
+$code-color: $gray-900;
+$code-block-bg: rgba($crimson, .1);
+
+
+/*-- scss:rules --*/
+$web-font-path: "https://fonts.googleapis.com/css2?family=Fira+Code&family=Libre+Baskerville:wght@400;700&display=swap";
+
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+
+

@@ -1,0 +1,32 @@
+ResEconometria
+2.1 
+
+sales %>% 
+  ggplot(aes(x = .p, y = .q)) +
+  geom_point()
+
+2.2
+
+fit.1 <- lm(.q ~ .p, data = sales)
+summary(fit.1)
+
+2.3
+
+sales <- 
+  sales %>% 
+  mutate(c_p = .p - mean(.p))
+fit.2 <- lm(.q ~ c_p, data = sales)
+summary(fit.2)
+
+2.4
+
+sales <- 
+  sales %>% 
+  mutate(log_p = log(.p),
+         log_q = log(.q))
+fit.3 <- lm(log_q ~ log_p, data = sales)
+summary(fit.3)
+
+2.5
+
+BETA < 1
